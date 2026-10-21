@@ -34,3 +34,4 @@ next-env.d.ts
 
 # uncompressed model sources (served copies live in public/models/stages)
 /models-src/stages/
+.env*
