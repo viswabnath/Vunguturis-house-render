@@ -22,7 +22,7 @@ export default function StatutoryAreaSection() {
       <div className="wrap">
         <div className="section-head">
           <h2>Areas and setbacks</h2>
-          <p>Area statement and boundary gaps as approved under RUDA permit {PROJECT_INFO.permitNo}.</p>
+          <p>Area statement and boundary gaps as approved under RUDA permit {PROJECT_INFO.permitNo}. The 3D models include later design changes, so each stage page shows the current-design areas.</p>
         </div>
 
         <div className="areas-grid">

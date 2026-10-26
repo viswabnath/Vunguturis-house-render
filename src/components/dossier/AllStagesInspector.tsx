@@ -100,7 +100,7 @@ export default function AllStagesInspector() {
     const touch = window.matchMedia("(pointer: coarse)").matches;
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, touch ? 1.5 : 2));
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.15;
+    renderer.toneMappingExposure = 0.65;
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
@@ -112,10 +112,11 @@ export default function AllStagesInspector() {
     const pmrem = new THREE.PMREMGenerator(renderer);
     const envMap = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
     scene.environment = envMap;
+    scene.environmentIntensity = 0.35;
 
     // Architectural Lighting
-    scene.add(new THREE.AmbientLight(0xfff8f0, 0.8));
-    const key = new THREE.DirectionalLight(0xfff5e0, 2.8);
+    scene.add(new THREE.AmbientLight(0xfff8f0, 0.25));
+    const key = new THREE.DirectionalLight(0xfff5e0, 1.8);
     key.position.set(14, 22, 16);
     key.castShadow = true;
     key.shadow.mapSize.set(touch ? 1024 : 2048, touch ? 1024 : 2048);

@@ -7,32 +7,35 @@ const ROOM_SCHEDULE = [
   {
     floor: "Ground floor",
     rooms: [
-      { name: "Parking (2 cars, tandem)", dimensionsM: "4.05 × 10.31 m", dimensionsFt: "13.29 × 33.82 ft", area: "449.5" },
-      { name: "Hall", dimensionsM: "3.02 × 4.36 m", dimensionsFt: "9.91 × 14.30 ft", area: "141.7" },
-      { name: "Bedroom", dimensionsM: "3.02 × 3.30 m", dimensionsFt: "9.91 × 10.83 ft", area: "107.3" },
-      { name: "Kitchen", dimensionsM: "3.02 × 2.43 m", dimensionsFt: "9.91 × 7.97 ft", area: "79.0" },
-      { name: "Bath", dimensionsM: "1.27 × 1.23 m", dimensionsFt: "4.17 × 4.04 ft", area: "16.8" },
+      { name: "Parking (2 cars, tandem)", dimensionsM: "9.81 × 4.04 m", dimensionsFt: "32.19 × 13.27 ft", area: "427.1" },
+      { name: "Hall", dimensionsM: "3.71 × 3.02 m", dimensionsFt: "12.19 × 9.90 ft", area: "120.7" },
+      { name: "Bedroom (incl. bath)", dimensionsM: "3.02 × 3.00 m", dimensionsFt: "9.90 × 9.84 ft", area: "97.5" },
+      { name: "Kitchen", dimensionsM: "3.02 × 2.37 m", dimensionsFt: "9.90 × 7.76 ft", area: "76.9" },
+      { name: "Bath (identical to upper floors)", dimensionsM: "2.10 × 1.20 m", dimensionsFt: "6.89 × 3.94 ft", area: "27.1" },
     ],
   },
   {
     floor: "First floor",
     rooms: [
-      { name: "Hall", dimensionsM: "4.05 × 7.77 m", dimensionsFt: "13.29 × 25.49 ft", area: "338.8" },
-      { name: "Dining", dimensionsM: "4.05 × 2.43 m", dimensionsFt: "13.29 × 7.97 ft", area: "105.9" },
-      { name: "Puja (north-east)", dimensionsM: "Niche", dimensionsFt: "", area: "25.0" },
-      { name: "Kitchen (south-east)", dimensionsM: "3.02 × 2.43 m", dimensionsFt: "9.91 × 7.97 ft", area: "79.0" },
-      { name: "Master bedroom + bath", dimensionsM: "3.02 × 3.24 m + 3.02 × 1.00 m", dimensionsFt: "9.91 × 10.63 ft + 9.91 × 3.28 ft", area: "138.0" },
-      { name: "Second bedroom + bath", dimensionsM: "3.02 × 3.30 m + 1.27 × 1.23 m", dimensionsFt: "9.91 × 10.83 ft + 4.17 × 4.04 ft", area: "124.1" },
+      { name: "Hall", dimensionsM: "7.33 × 4.04 m", dimensionsFt: "24.05 × 13.27 ft", area: "319.1" },
+      { name: "Dining", dimensionsM: "4.04 × 2.37 m", dimensionsFt: "13.27 × 7.76 ft", area: "103.0" },
+      { name: "Puja (north-east)", dimensionsM: "1.14 × 0.70 m", dimensionsFt: "3.74 × 2.30 ft", area: "8.6" },
+      { name: "Kitchen (south-east)", dimensionsM: "3.62 × 2.37 m", dimensionsFt: "11.87 × 7.76 ft", area: "92.1" },
+      { name: "Master bedroom (incl. bath)", dimensionsM: "3.71 × 3.62 m", dimensionsFt: "12.19 × 11.87 ft", area: "144.7" },
+      { name: "Second bedroom (incl. bath)", dimensionsM: "3.62 × 3.00 m", dimensionsFt: "11.87 × 9.84 ft", area: "116.9" },
+      { name: "Bath (each, identical)", dimensionsM: "2.10 × 1.20 m", dimensionsFt: "6.89 × 3.94 ft", area: "27.1" },
     ],
   },
   {
     floor: "Second floor",
     rooms: [
-      { name: "Hall", dimensionsM: "4.05 × 7.77 m", dimensionsFt: "13.29 × 25.49 ft", area: "338.8" },
-      { name: "Dining + puja niche", dimensionsM: "4.05 × 2.43 m + niche", dimensionsFt: "13.29 × 7.97 ft + niche", area: "130.9" },
-      { name: "Kitchen", dimensionsM: "3.02 × 2.43 m", dimensionsFt: "9.91 × 7.97 ft", area: "79.0" },
-      { name: "Master bedroom + bath", dimensionsM: "3.02 × 3.24 m + 3.02 × 1.00 m", dimensionsFt: "9.91 × 10.63 ft + 9.91 × 3.28 ft", area: "138.0" },
-      { name: "Second bedroom + bath", dimensionsM: "3.02 × 3.30 m + 1.27 × 1.23 m", dimensionsFt: "9.91 × 10.83 ft + 4.17 × 4.04 ft", area: "124.1" },
+      { name: "Hall", dimensionsM: "7.33 × 4.04 m", dimensionsFt: "24.05 × 13.27 ft", area: "319.1" },
+      { name: "Dining", dimensionsM: "4.04 × 2.37 m", dimensionsFt: "13.27 × 7.76 ft", area: "103.0" },
+      { name: "Puja (north-east)", dimensionsM: "1.14 × 0.70 m", dimensionsFt: "3.74 × 2.30 ft", area: "8.6" },
+      { name: "Kitchen (south-east)", dimensionsM: "3.62 × 2.37 m", dimensionsFt: "11.87 × 7.76 ft", area: "92.1" },
+      { name: "Master bedroom (incl. bath)", dimensionsM: "3.71 × 3.62 m", dimensionsFt: "12.19 × 11.87 ft", area: "144.7" },
+      { name: "Second bedroom (incl. bath)", dimensionsM: "3.62 × 3.00 m", dimensionsFt: "11.87 × 9.84 ft", area: "116.9" },
+      { name: "Bath (each, identical)", dimensionsM: "2.10 × 1.20 m", dimensionsFt: "6.89 × 3.94 ft", area: "27.1" },
     ],
   },
 ];
@@ -51,7 +54,7 @@ export default function ArchitecturalSheetsSection() {
       <div className="wrap">
         <div className="section-head">
           <h2>Drawings and schedules</h2>
-          <p>The sheets the 3D models are built from, with every room size and opening listed below.</p>
+          <p>The original approved sheets, with the room sizes of the current design and the approved openings listed below.</p>
         </div>
 
         <div className="drawings-bar">
@@ -76,7 +79,7 @@ export default function ArchitecturalSheetsSection() {
         <div className="sched-grid">
           <div className="sched-scroll">
             <table className="sched">
-              <caption>Room sizes</caption>
+              <caption>Room sizes (current design)</caption>
               <thead>
                 <tr>
                   <th scope="col">Room</th>
@@ -102,6 +105,9 @@ export default function ArchitecturalSheetsSection() {
                 </tbody>
               ))}
             </table>
+            <p className="small" style={{ color: "var(--ink-3)", marginTop: 12 }}>
+              Bedroom sizes include the attached bath. Baths are measured inside the walls.
+            </p>
           </div>
 
           <div className="sched-scroll">
@@ -133,7 +139,7 @@ export default function ArchitecturalSheetsSection() {
               </tbody>
             </table>
             <p className="small" style={{ color: "var(--ink-3)", marginTop: 12 }}>
-              Quantities are counted from the floor plans, all three floors together.
+              Quantities are counted from the approved floor plans, all three floors together.
             </p>
           </div>
         </div>
