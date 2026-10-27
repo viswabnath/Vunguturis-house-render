@@ -7,35 +7,38 @@ const ROOM_SCHEDULE = [
   {
     floor: "Ground floor",
     rooms: [
-      { name: "Parking (2 cars, tandem)", dimensionsM: "9.81 × 4.04 m", dimensionsFt: "32.19 × 13.27 ft", area: "427.1" },
+      { name: "Parking (2 cars, tandem, net)", dimensionsM: "9.81 × 4.04 m", dimensionsFt: "32.19 × 13.27 ft", area: "422.4" },
       { name: "Hall", dimensionsM: "3.71 × 3.02 m", dimensionsFt: "12.19 × 9.90 ft", area: "120.7" },
       { name: "Bedroom (incl. bath)", dimensionsM: "3.02 × 3.00 m", dimensionsFt: "9.90 × 9.84 ft", area: "97.5" },
       { name: "Kitchen", dimensionsM: "3.02 × 2.37 m", dimensionsFt: "9.90 × 7.76 ft", area: "76.9" },
       { name: "Bath (identical to upper floors)", dimensionsM: "2.10 × 1.20 m", dimensionsFt: "6.89 × 3.94 ft", area: "27.1" },
+      { name: "Lift (clear, outside corner)", dimensionsM: "1.65 × 1.46 m", dimensionsFt: "5.41 × 4.79 ft", area: "25.9" },
     ],
   },
   {
     floor: "First floor",
     rooms: [
-      { name: "Hall", dimensionsM: "7.33 × 4.04 m", dimensionsFt: "24.05 × 13.27 ft", area: "319.1" },
+      { name: "Hall (net of stair corner cut)", dimensionsM: "7.33 × 4.04 m", dimensionsFt: "24.05 × 13.27 ft", area: "314.5" },
       { name: "Dining", dimensionsM: "4.04 × 2.37 m", dimensionsFt: "13.27 × 7.76 ft", area: "103.0" },
       { name: "Puja (north-east)", dimensionsM: "1.14 × 0.70 m", dimensionsFt: "3.74 × 2.30 ft", area: "8.6" },
       { name: "Kitchen (south-east)", dimensionsM: "3.62 × 2.37 m", dimensionsFt: "11.87 × 7.76 ft", area: "92.1" },
       { name: "Master bedroom (incl. bath)", dimensionsM: "3.71 × 3.62 m", dimensionsFt: "12.19 × 11.87 ft", area: "144.7" },
       { name: "Second bedroom (incl. bath)", dimensionsM: "3.62 × 3.00 m", dimensionsFt: "11.87 × 9.84 ft", area: "116.9" },
       { name: "Bath (each, identical)", dimensionsM: "2.10 × 1.20 m", dimensionsFt: "6.89 × 3.94 ft", area: "27.1" },
+      { name: "Lift (clear, outside corner)", dimensionsM: "1.65 × 1.46 m", dimensionsFt: "5.41 × 4.79 ft", area: "25.9" },
     ],
   },
   {
     floor: "Second floor",
     rooms: [
-      { name: "Hall", dimensionsM: "7.33 × 4.04 m", dimensionsFt: "24.05 × 13.27 ft", area: "319.1" },
+      { name: "Hall (net of stair corner cut)", dimensionsM: "7.33 × 4.04 m", dimensionsFt: "24.05 × 13.27 ft", area: "314.5" },
       { name: "Dining", dimensionsM: "4.04 × 2.37 m", dimensionsFt: "13.27 × 7.76 ft", area: "103.0" },
       { name: "Puja (north-east)", dimensionsM: "1.14 × 0.70 m", dimensionsFt: "3.74 × 2.30 ft", area: "8.6" },
       { name: "Kitchen (south-east)", dimensionsM: "3.62 × 2.37 m", dimensionsFt: "11.87 × 7.76 ft", area: "92.1" },
       { name: "Master bedroom (incl. bath)", dimensionsM: "3.71 × 3.62 m", dimensionsFt: "12.19 × 11.87 ft", area: "144.7" },
       { name: "Second bedroom (incl. bath)", dimensionsM: "3.62 × 3.00 m", dimensionsFt: "11.87 × 9.84 ft", area: "116.9" },
       { name: "Bath (each, identical)", dimensionsM: "2.10 × 1.20 m", dimensionsFt: "6.89 × 3.94 ft", area: "27.1" },
+      { name: "Lift (clear, outside corner)", dimensionsM: "1.65 × 1.46 m", dimensionsFt: "5.41 × 4.79 ft", area: "25.9" },
     ],
   },
 ];
@@ -106,7 +109,7 @@ export default function ArchitecturalSheetsSection() {
               ))}
             </table>
             <p className="small" style={{ color: "var(--ink-3)", marginTop: 12 }}>
-              Bedroom sizes include the attached bath. Baths are measured inside the walls.
+              Bedroom sizes include the attached bath. Baths are measured inside the walls. Hall and parking areas are net of the 0.5 × 0.87 m corner cut beside the stair.
             </p>
           </div>
 
